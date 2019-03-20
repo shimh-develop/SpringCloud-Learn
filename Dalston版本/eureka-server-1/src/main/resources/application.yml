@@ -1,0 +1,17 @@
+server:
+  port: 2000
+
+
+spring:
+  application:
+    name: enreka-server
+
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    #register-with-eureka: false
+    fetchRegistry: false #通过eureka.client.register-with-eureka：false和fetchRegistry：false来表明自己是一个eureka server.
+    serviceUrl:
+      defaultZone: http://peer2:2001/eureka/
