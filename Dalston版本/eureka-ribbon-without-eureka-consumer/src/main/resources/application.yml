@@ -1,0 +1,15 @@
+server:
+  port: 4001
+
+
+spring:
+  application:
+    name: eureka-ribbon-without-eureka-consumer
+
+
+ENREKA-CLIENT:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:3000,localhost:3001
+    ServerListRefreshInterval: 15000

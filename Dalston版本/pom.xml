@@ -11,6 +11,10 @@
         <module>eureka-server-1</module>
         <module>eureka-server-2</module>
         <module>eureka-client</module>
+        <module>eureka-ribbon-consumer</module>
+        <module>eureka-ribbon-without-eureka-consumer</module>
+        <module>eureka-feign-consumer</module>
+        <module>eureka-feign-customizing-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

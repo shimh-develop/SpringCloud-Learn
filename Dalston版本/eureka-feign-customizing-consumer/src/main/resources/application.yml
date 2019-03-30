@@ -1,0 +1,22 @@
+server:
+  port: 4002
+
+
+spring:
+  application:
+    name: eureka-feign-customizing-consumer
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:2000/eureka/
+
+
+logging:
+  level:
+    com:
+      shimh:
+        CustomFeignClient: DEBUG
