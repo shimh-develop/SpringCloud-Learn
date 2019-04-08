@@ -1,0 +1,21 @@
+server:
+  port: 4004
+
+
+spring:
+  application:
+    name: eureka-feign-hystrix-consumer
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:2000/eureka/
+
+# 有坑 IDEA工具不提示
+feign:
+ hystrix:
+    enabled: true
+

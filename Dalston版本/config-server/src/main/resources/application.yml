@@ -1,0 +1,14 @@
+server:
+  port: 6000
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      git:
+        uri: https://github.com/shimh-develop/SpringCloud-Learn
+        username:
+        password:
+
+
