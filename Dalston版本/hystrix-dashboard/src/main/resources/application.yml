@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: hystrix-dashboard
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/

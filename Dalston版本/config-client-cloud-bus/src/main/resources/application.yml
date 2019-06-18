@@ -1,0 +1,17 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: config
+
+## 刷新时，关闭安全验证
+management:
+  security:
+    enabled: false
+
+
+#logging:
+#  level:
+#    org.springframework.boot: debug
+

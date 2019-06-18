@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      profile: default
+      label: master
+      discovery:
+        enabled: true #通过服务发现组件访问config server
+        service-id: config-server
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:2000/eureka/
+

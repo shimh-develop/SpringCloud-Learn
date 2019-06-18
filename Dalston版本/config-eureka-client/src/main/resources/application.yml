@@ -1,0 +1,12 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: config
+
+
+#logging:
+#  level:
+#    org.springframework.boot: debug
+

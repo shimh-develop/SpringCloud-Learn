@@ -1,0 +1,35 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: stream-kafka
+  cloud:
+    stream:
+      kafka:
+        binder:
+          #Kafka的消息中间件服务器
+          #brokers: localhost:9092
+          #Zookeeper的节点，如果集群，后面加,号分隔
+          #zk-nodes: localhost:2181
+          #如果设置为false,就不会自动创建Topic 有可能你Topic还没创建就直接调用了。
+          #auto-create-topics: true
+
+      bindings:
+        output:
+          destination: stream
+          content-type: text/plain
+        custom-output:
+          destination: stream
+          content-type: text/plain
+        input:
+          destination: stream
+          group: group 分组 同一个消息只能被同组的一个消费，不同组的可以消费
+        custom-sink:
+          destination: stream
+          group: group
+
+#logging:
+#  level:
+#    org.springframework.boot: debug
+

@@ -10,10 +10,13 @@ spring:
         git:
           uri: https://github.com/shimh-develop/SpringCloud-Learn
           clone-on-start: true
-          # username: 用户名
-          # password: 密码
 
 
-
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:2000/eureka/
 
 

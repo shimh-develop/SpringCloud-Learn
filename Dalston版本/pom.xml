@@ -21,6 +21,11 @@
         <module>hystrix-turbine</module>
         <module>gateway-zuul-eureka</module>
         <module>config-server</module>
+        <module>config-client</module>
+        <module>config-client-cloud-bus</module>
+        <module>config-eureka-server</module>
+        <module>config-eureka-client</module>
+        <module>stream-kafka</module>
     </modules>
     <packaging>pom</packaging>
 
